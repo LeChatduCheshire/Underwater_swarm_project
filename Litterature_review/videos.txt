@@ -1,0 +1,5 @@
+Fabriquer un ROV (véhicule téléopéré) Arduino | Projet d'ingénierie 
+https://www.youtube.com/watch?v=wRco4tGXrzw&t=238s
+
+CoCoRo swarm of underwater robots :
+https://www.youtube.com/watch?v=XUk-qLfiwlc

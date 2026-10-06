@@ -1,0 +1,3 @@
+[submodule "hardware/underwater-drone"]
+	path = hardware/underwater-drone
+	url = https://github.com/guidoschillaci/underwater-drone
