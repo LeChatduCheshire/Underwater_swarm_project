@@ -1,28 +1,41 @@
-Here are some things to get started with. No rush at all, these are just things to look at over the next couple of weeks.
+﻿# Underwater Swarm Project
 
-🎯 Scope
-The multi-vehicle formation simulation is part of my ongoing research and upcoming papers, so for this project I'd like us to focus mainly on the real hardware side, building a low-cost ROV and validating it through real-world experiments.
+An academic project exploring the design of a small underwater robot platform for swarm applications. This repository currently brings together the vehicle's mechanical and electronics design files, component and cost research, and background literature. The CAD and technical drawings include work-in-progress material.
 
-📄 Resources
-- My RASSE 2026 and CACS 2026 papers (attached), to understand the background of the project
-- ArduSub documentation and ArduPilot SITL docs
+![Modular underwater ROV concept](figures/underactuated_rov_cad.png)
 
-🛠 Two things to think about
-1. ROV design (especially Thomas, and anyone with mechanical experience)
-Could you think about an ROV design that we could realistically build by early November? PVC or 3D printing, either is fine. I'm bringing the thrusters, battery, and electronics, and I'll show you all the parts when I arrive.
+## Repository map
 
-2. Research topic (everyone)
-Let's think together about a research topic where we can build the ROV and run some experiments by November, and write it up as a paper by your presentation in December. Some examples:
-- Design and experimental validation of a low-cost ROV testbed (localization accuracy, position control performance, cost)
-- Robust localization for a low-cost ROV, e.g. overhead camera + markers fused with IMU and depth sensor
-- System identification of a low-cost ROV to reduce the sim-to-real gap in ArduSub SITL
-These are just examples, so feel free to suggest your own ideas!
+- [`hardware/CAD_underwater_swarm_project/`](hardware/CAD_underwater_swarm_project/) — vehicle assembly, component CAD, print files, electronics diagram, and technical drawings.
+- [`hardware/Electronics/`](hardware/Electronics/) — electronics architecture and related design material.
+- [`hardware/Doc/`](hardware/Doc/) — component references, blueprints, and assembly documentation.
+- [`hardware/drafts/`](hardware/drafts/) — early hardware and electronics sketches.
+- [`hardware/underwater-drone/`](hardware/underwater-drone/) — upstream modular ROV model submodule, including printable parts and its own documentation.
+- [`hardware/Underwater_robot_Comparing_designs_synthesis_v2.pdf`](hardware/Underwater_robot_Comparing_designs_synthesis_v2.pdf) — design comparison and synthesis.
+- [`hardware/Underwater_Swarm_BOM_TWD_2026.11.16.xlsx`](hardware/Underwater_Swarm_BOM_TWD_2026.11.16.xlsx) — latest dated bill of materials and cost estimate in the repository.
+- [`Litterature_review/`](Litterature_review/) — collected papers, proposal, and reference material.
+- [`Reports/`](Reports/) — project report archive.
 
-📅 My schedule
-I'll be away from Taiwan from Nov 7 to around Dec 5 for a presentation in Tokyo, the RASSE conference in Chengdu, and an exhibition in Tokyo. I'll be available online by text during that time, so it would be great if we could build the first ROV and do a first pool test before Nov 7.
+## Design snapshots
 
-Also, could you tell me the deadlines for the planning paper, the final paper, and the final presentation (if any)?
+| Assembly drawing | Electronics architecture |
+| --- | --- |
+| ![Vehicle assembly drawing, version 1.0](figures/assembly_drawing_v1.0.png) | ![Underactuated ROV electronics diagram](figures/electronics_diagram.png) |
 
-💬 By the way, I'm thinking of setting up a Discord server to keep things organized. Would that work for everyone?
+The assembly drawing is version 1.0 and was rendered from the PDF in the technical drawings folder. The CAD rendering is marked work in progress; consult the source CAD for the current design state. The electronics diagram is an architecture reference.
 
-When I arrive on October 5, let's meet up, look at the actual parts together, and decide the next steps!
+## Getting the files
+
+Clone the repository and initialize its ROV model submodule to retrieve the upstream model files:
+
+```bash
+git clone --recurse-submodules <repository-url>
+```
+
+If you already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+CAD source files are provided in the formats present in their respective folders (including Autodesk Inventor files, STEP/IGES models, and printable files where available). Refer to each folder's documentation for format-specific details. No software build or simulation entry point is currently documented in this repository.
