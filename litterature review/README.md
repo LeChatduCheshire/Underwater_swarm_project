@@ -1,0 +1,1 @@
+Two articles by Takashi Arai are ommited from the public github, as they have not yet been published.
