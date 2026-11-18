@@ -6,16 +6,14 @@ An academic project exploring the design of a small underwater robot platform fo
 
 ## Repository map
 
-- [`hardware/CAD_underwater_swarm_project/`](hardware/CAD_underwater_swarm_project/) — vehicle assembly, component CAD, print files, electronics diagram, and technical drawings.
-- [`hardware/Electronics/`](hardware/Electronics/) — electronics architecture and related design material.
-- [`hardware/Doc/`](hardware/Doc/) — component references, blueprints, and assembly documentation.
-- [`hardware/drafts/`](hardware/drafts/) — early hardware and electronics sketches.
-- [`hardware/underwater-drone/`](hardware/underwater-drone/) — upstream modular ROV model submodule, including printable parts and its own documentation.
-- [`hardware/Underwater_robot_Comparing_designs_synthesis_v2.pdf`](hardware/Underwater_robot_Comparing_designs_synthesis_v2.pdf) — design comparison and synthesis.
-- [`hardware/Underwater_Swarm_BOM_TWD_2026.11.16.xlsx`](hardware/Underwater_Swarm_BOM_TWD_2026.11.16.xlsx) — latest dated bill of materials and cost estimate in the repository.
-- [`Litterature_review/`](Litterature_review/) — collected papers, proposal, and reference material.
-- [`Reports/`](Reports/) — project report archive.
-
+- [`hardware/CAD/`](hardware/CAD/) — vehicle assembly and component CAD source files.
+- [`hardware/3D print files/`](hardware/3D%20print%20files/) — exported STL parts for printing.
+- [`hardware/electronics/`](hardware/electronics/) — electronics architecture diagram and source file.
+- [`hardware/technical documentation/`](hardware/technical%20documentation/) — assembly manual, technical drawings, BOMs, design comparison, and component references.
+- [`hardware/ressources/`](hardware/ressources/) — supporting enclosure files and the upstream modular ROV model submodule.
+- [`deliverables/2026.10.29_Paper_Charlie/`](deliverables/2026.10.29_Paper_Charlie/) — project paper, source files, and annexes.
+- [`litterature review/`](litterature%20review/) — research papers, proposal, and video references.
+- [`figures/`](figures/) — images used in this README.
 ## Design snapshots
 
 | Assembly drawing | Electronics architecture |
